@@ -1,0 +1,70 @@
+.lchats-followCard {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    width: 400px;
+    justify-content: space-between;
+    background-color: #000;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .lchats-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+  }
+  
+  .lchats-followCard-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lchats-followCard-infoUserName {
+    opacity: .6;
+  }
+  
+  .lchats-followCard-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+  }
+  
+  .lchats-followCard-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+  }
+  .lchats-followCard-aside{
+    margin-right: 10px;
+  }
+  
+  .lchats-followCard-button:hover {
+    opacity: .8;
+  }
+  
+  .lchats-followCard-text {
+    display: block;
+  }
+  
+
+  .lchats-followCard-button.is-following:hover .lc-followCard-text {
+    display: none;
+  }
+  
+
+@media screen and (max-width: 500px) { /* Ajusta 600px según tus necesidades */
+    .lchats-followCard {
+      width: 100%;
+    }
+}
+@media screen and (min-width: 750px) { /* Ajusta 600px según tus necesidades */
+    .lchats-followCard {
+      width: 80%;
+    }
+}

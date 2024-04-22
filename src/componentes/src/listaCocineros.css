@@ -1,0 +1,84 @@
+.lc-followCard {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    width: 350px;
+    justify-content: space-between;
+    background-color: #000;
+    border-radius: 1000px;
+  }
+  
+  .lc-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+  }
+  
+  .lc-followCard-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lc-followCard-infoUserName {
+    opacity: .6;
+  }
+  
+  .lc-followCard-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+  }
+  
+  .lc-followCard-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+  }
+  .lc-followCard-aside{
+    margin-right: 10px;
+  }
+  
+  .lc-followCard-button:hover {
+    opacity: .8;
+  }
+  
+  .lc-followCard-text {
+    display: block;
+  }
+  
+  .lc-followCard-button.is-following {
+    border: 1px solid #bbb;
+    background: transparent;
+    color: #fff;
+    width: 140px;
+  }
+  
+  .lc-followCard-button.is-following:hover {
+    background-color: rgba(255, 0, 0, 0.178);
+    color: red;
+    border: 1px solid red;
+    transition: .3s ease all;
+    opacity: 1;
+  }
+  
+  .lc-followCard-button.is-following:hover .lc-followCard-text {
+    display: none;
+  }
+  
+  .lc-followCard-button.is-following:hover .tw-followCard-stopFollow {
+    display: block;
+  }
+  
+  .lc-followCard-stopFollow {
+    display: none;
+  }
+  @media screen and (max-width: 450px) { /* Ajusta 600px según tus necesidades */
+    .lc-followCard {
+      width: 100%;
+    }
+}

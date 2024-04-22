@@ -1,0 +1,43 @@
+.mapaArea {
+    display: flex; /* Habilita Flexbox */
+    flex-direction: column; /* Alinea los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    height: 100vh; /* Altura total de la ventana de visualización */
+}
+
+#map {
+    height: 80vh; /* Altura del mapa */
+    width: 100%; /* Ancho del mapa */
+    margin: 10px; /* Espacio alrededor del mapa */
+}
+
+.button-container {
+    display: flex; /* Habilita Flexbox */
+    justify-content: center; /* Centra los botones horizontalmente */
+    width: 100%; /* Ancho completo para centrar correctamente */
+    margin: 10px; /* Espacio alrededor del contenedor de botones */
+}
+
+.button {
+    padding: 10px 20px; /* Aumenta el relleno para facilitar la interacción táctil */
+    font-size: 16px; /* Aumenta el tamaño de fuente para mejor legibilidad */
+    margin: 5px; /* Espacio entre botones */
+}
+
+.button:hover {
+    background-color: #f2f2f2; /* Cambio de color al pasar el ratón */
+    transition: background-color 0.3s; /* Transición suave */
+}
+
+@media (min-width: 768px) {
+    #map {
+        height: 70vh; /* Aumenta la altura para una experiencia más inmersiva */
+        width: 90%; /* Ancho del mapa */
+        margin: 0 auto; /* Centrar el mapa horizontalmente */
+    }
+
+    .button-container {
+        width: 90%; /* Ancho del contenedor de botones */
+    }
+}

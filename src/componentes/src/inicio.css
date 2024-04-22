@@ -1,0 +1,20 @@
+.contenedor{
+    height: 100vh; /* Altura total de la ventana de visualización */
+    display: flex;
+}
+.menu{
+    background-color: #15202B;
+    width: 20%;
+    height: 100vh;
+    justify-self: center;
+    align-items: center;
+}
+.map-contenido{
+    width: 100%;
+    height: 100vh;
+}
+@media screen and (max-width: 1050px) { /* Ajusta 600px según tus necesidades */
+    .menu{
+        width: 10%;
+    }
+}

@@ -1,0 +1,75 @@
+.registro-card {
+  width: 100%; /* Ancho basado en porcentaje del contenedor padre */
+  max-width: 500px; /* Ancho máximo para pantallas grandes */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f3f3f3;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.registro-title{
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+
+.url-login {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.url-login a {
+  color: blue;
+  text-decoration: none;
+}
+
+.url-login a:hover {
+  text-decoration: underline;
+}
+
+
+/* Media query para pantallas medianas */
+@media (max-width: 768px) {
+  .registro-card {
+    width: 90%; /* Aumenta el ancho en pantallas más pequeñas */
+    margin: 20px auto; /* Reducir el margen en pantallas más pequeñas */
+  }
+}
+
+/* Media query para pantallas pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+  .registro-card {
+    width: 95%; /* Aumenta aún más el ancho en pantallas muy pequeñas */
+    margin: 10px auto; /* Reducir aún más el margen */
+  }
+}

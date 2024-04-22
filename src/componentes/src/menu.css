@@ -1,0 +1,53 @@
+.menu-lateral {
+    display: flex; /* Habilita flexbox */
+    flex-direction: column; /* Los elementos se alinean verticalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: start; /* Centra los elementos horizontalmente */
+    width: auto; /* Ancho del menú */
+    color: white;
+    padding: 20px;
+    height: 90vh; /* Altura completa */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white; /* Color del texto */
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: red; /* Color al pasar el mouse */
+}
+
+.icon {
+    margin-right: 20px;
+    font-size: 24px; /* Tamaño de los iconos */
+}
+
+.text {
+    font-size: 18px; /* Tamaño del texto */
+}
+
+@media screen and (max-width: 1050px) { /* Ajusta 600px según tus necesidades */
+    .menu-lateral {
+        padding: 5px; /* Reducir el padding para pantallas pequeñas */
+        align-items: center; 
+    }
+
+    .menu-item {
+        justify-content: center; /* Centrar íconos en el menú-item */
+    }
+
+    .text {
+        display: none; /* Ocultar texto en pantallas pequeñas */
+    }
+    .icon {
+        margin-right: 0px;
+    }
+}

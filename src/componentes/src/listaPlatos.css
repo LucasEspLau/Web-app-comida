@@ -1,0 +1,101 @@
+.lp-followCard {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    width: 80%;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+    border-radius: 10px;
+    min-height: 150px;
+  }
+  
+  .lp-followCard-header {
+    display: flex;
+    align-items: center;
+    gap: 8px
+  }
+  
+  .lp-followCard-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lp-followCard-infoPlato {
+    opacity: .6;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas que quieres mostrar */
+    -webkit-box-orient: vertical;
+    overflow-y: auto;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+
+  .lp-followCard-infoPlato {
+    max-height: 100px; /* Altura máxima antes de que aparezca el scroll */
+    overflow-y: auto; /* Permite desplazamiento vertical si el contenido excede la altura máxima */
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+  
+  /* Estilos para la barra de desplazamiento en escritorio */
+  .lp-followCard-infoPlato::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .lp-followCard-infoPlato::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .lp-followCard-infoPlato::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  .lp-followCard-infoPlato::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.lp-followCard-info strong{
+  padding-bottom: 10px;
+}
+  
+  .lp-followCard-avatar {
+    padding-left: 5px;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+  }
+  
+  .lp-followCard-button {
+    cursor: pointer;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    width: 100px;
+  }
+  
+  .lp-followCard-button:hover {
+    opacity: .8;
+  }
+  
+  .lp-followCard-text {
+    display: block;
+  }
+  .lp-followCard-aside{
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 769px) { /* Ajusta 600px según tus necesidades */
+    .lp-followCard {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 450px) { /* Ajusta 600px según tus necesidades */
+    .lp-followCard {
+      width: 100%;
+    }
+  }
+
